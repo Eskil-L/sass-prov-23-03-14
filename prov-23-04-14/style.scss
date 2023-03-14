@@ -1,0 +1,16 @@
+$primarycolor: yellow;
+$secondarycolor: blue;
+
+p{
+    color: $primarycolor;
+}
+
+@mixin color {
+    color: $primarycolor;
+    background-color: $secondarycolor
+}
+
+
+h1{
+    @include color();
+}
